@@ -1,7 +1,17 @@
 from time import sleep
+from colorama import init, Fore, Back, Style
 
+
+class style:
+    BOLD = "\033[1m"
+    END = "\033[0m"
+    UNDERLINE = '\033[4m'
+
+
+init()
+1
 while True:
-    print("Welcome To The Bangalore Tourism Tour!")
+    print(Fore.GREEN + "Welcome To The Bangalore Tourism Tour!")
     sleep(1)
     print("Ok so tell me where you want to travel")
     print("1.Lalbagh Botanical Garden")
@@ -12,7 +22,15 @@ while True:
     choice = int(input("Enter your choice:"))
     if choice == 1:
         print(
-            '''Lalbagh is one of Bengaluru’s major attractions. A sprawling garden situated in a 240 acres piece of land in the heart of the city, Lalbagh houses India’s largest collection of tropical plants and sub-tropical plants, including trees that are several centuries old. Exhibits like the Snow White and the seven dwarfs, and a topiary park, an expansive lake, a beautiful glasshouse modelled around the Crystal Palace in London adorn the park giving it a surrealistic atmosphere. A watchtower perched on top of a 3000 million years old rocky outcrop (which is a National Geological Monument), built by Kempegowda, the founder of Bengaluru also adorns the picturesque garden.
+            Fore.LIGHTBLUE_EX
+            + f"""Lalbagh is one of Bengaluru’s major attractions. A sprawling garden situated in a 
+            240 acres piece of land in the heart of the city, Lalbagh houses India’s largest collection 
+            of tropical plants and sub-tropical plants, including trees that are several centuries old. 
+            Exhibits like the Snow White and the seven dwarfs, and a topiary park, an expansive lake, a 
+            beautiful glasshouse modelled around the Crystal Palace in London adorn the park giving it a 
+            surrealistic atmosphere. A watchtower perched on top of a 3000 million years old rocky outcrop 
+            (which is a National Geological Monument), built by Kempegowda, the founder of Bengaluru also 
+            adorns the picturesque garden.
 
 Why visit Lalbagh:
 
@@ -42,21 +60,21 @@ Lalbagh is located 7 kms south of the city centre (Majestic area) and 38 kms fro
 
 Places to stay near Lalbagh:
 
-Budget and luxury hotels are available near Lalbagh, Jayanagara, Basavanagudi and KR Market area which are within walking distance from Lalbagh'''
+Budget and luxury hotels are available near Lalbagh, Jayanagara, Basavanagudi and KR Market area which are within walking distance from Lalbagh"""
         )
     elif choice == 2:
         print(
-            '''Situated to the western of Chord Road on the hill lock known as 'Hare Krishna Hill', Iskcon Temple is known not only for its religious significance but also for its architectural beauty. Also known as Hare Krishna this temple has been built in the Neo-Classical style, presenting a beautiful fusion of ultra-contemporary and traditional style and is equipped with all kinds of modern amenities. Like various other Iskcon temples which are spread all across the world, this temple of Bangalore is also dedicated to the Lord Krishna and Radha.
+            """Situated to the western of Chord Road on the hill lock known as 'Hare Krishna Hill', Iskcon Temple is known not only for its religious significance but also for its architectural beauty. Also known as Hare Krishna this temple has been built in the Neo-Classical style, presenting a beautiful fusion of ultra-contemporary and traditional style and is equipped with all kinds of modern amenities. Like various other Iskcon temples which are spread all across the world, this temple of Bangalore is also dedicated to the Lord Krishna and Radha.
 
 This temple was built to mark the birth anniversary of Sri Prabhupada, the founder of ISKCON. The temple has 4 ‘gopurams’ with each being connected to the other illuminating glass canopy. The captivating waterfalls, designed arcs along with intricately done ceilings add on to the overall beauty of the temple. The 10,000 square feet hall, named as the “Hari Naam Kirtan” has also been beautified with exquisite paintings on the ceilings.
 
 The Iskcon Vedic Theatre is another popular attraction of the temple. Along with this the temple also has vedic museum and area for exhibitions. The lush green garden with mesmerizing flowering plants boosts the temple’s beauty even more. The open-air amphitheater which hosts various concerts and festivals also makes this temple a unique one.
 
-Well connected to the rest of the city, reaching the Iskcon Temple is a hassle free task. There are many bus stands located near to the temple. So apart from usual autos and taxis, you can also one of the many buses which go till the temple.'''
+Well connected to the rest of the city, reaching the Iskcon Temple is a hassle free task. There are many bus stands located near to the temple. So apart from usual autos and taxis, you can also one of the many buses which go till the temple."""
         )
     elif choice == 3:
         print(
-            '''A green haven spread across 300 acres, Cubbon Park provides Bengalureans with a refuge from the hustle and bustle of city life right in the middle of the city. The park is home to the State Library housed in the Sheshadri Iyer Memorial Hall, a splendid red Gothic structure. The whole park is peppered with fountains, statues, flowering trees and lush greenery.
+            """A green haven spread across 300 acres, Cubbon Park provides Bengalureans with a refuge from the hustle and bustle of city life right in the middle of the city. The park is home to the State Library housed in the Sheshadri Iyer Memorial Hall, a splendid red Gothic structure. The whole park is peppered with fountains, statues, flowering trees and lush greenery.
 
 Things To Do:
 
@@ -74,12 +92,12 @@ Vidhana Soudha, High Court of Karnataka, Freedom Park, Kanteerava Indoor Stadium
 
 How to reach:
 
-Cubbon Park can be reached using the Bengaluru Metro(BMRCL), bus or taxi from any part of Bengaluru city. The Park is 3 kms from Majestic bus stand, 35 kms from Bengaluru airport. Traffic restrictions may apply from time to time.'''
+Cubbon Park can be reached using the Bengaluru Metro(BMRCL), bus or taxi from any part of Bengaluru city. The Park is 3 kms from Majestic bus stand, 35 kms from Bengaluru airport. Traffic restrictions may apply from time to time."""
         )
 
     elif choice == 4:
         print(
-            '''It is not in every city that you find a place bestowed with scenic beauty and full of exquisite flora and fauna. Bannerghatta National Park which is approximately 21 km from the city of Bangalore presents tourists with perfect weekend options. There is nothing like relaxing amidst the refreshing natural setting after hectic work pressure and monotony of daily chores. Excitement of seeing the bravest of all the animals, tigers, from few inches of distance and the pleasure of looking at colourful and exotic plants is unexplainable.
+            """It is not in every city that you find a place bestowed with scenic beauty and full of exquisite flora and fauna. Bannerghatta National Park which is approximately 21 km from the city of Bangalore presents tourists with perfect weekend options. There is nothing like relaxing amidst the refreshing natural setting after hectic work pressure and monotony of daily chores. Excitement of seeing the bravest of all the animals, tigers, from few inches of distance and the pleasure of looking at colourful and exotic plants is unexplainable.
 
 Established in the year of 1971, Bannerghatta National Park is spread across 104. 27 sq.kms and has ten reserve forests of Anekal Range of the Bangalore Forest Division under it. Once at the national park, you will have more than one option to keep yourself engaged. Along with national park, Bangerghatta has an Aquarium, a Zoo, Children's park, Crocodile Farm, Snake park, Prehistoric animals park and a Museum. From families with children to adventure lovers, every one has something of their choice here.
 
@@ -103,12 +121,12 @@ Although the city of Bangalore and its near by areas has moderate climate and mo
 
 You can reach the Park by opting for bus services running from Bangalore which have high frequency or hiring private transportation.
 
-The Park is open for tourists from 9 am and 5 pm. It is closed on every Tuesday of the week. You can buy tickets for entry into the Zoo and Safaris at the main entrance.'''
+The Park is open for tourists from 9 am and 5 pm. It is closed on every Tuesday of the week. You can buy tickets for entry into the Zoo and Safaris at the main entrance."""
         )
 
     elif choice == 5:
         print(
-            '''Located at a distance of only 20 km outside Bengaluru, Turahalli is a sprawling verdant forest that is a perfect escapade from the chaos and din of the city into nature. The forest is sprinkled with huge rock boulders that make it a perfect spot not only to sit and relax but also to pose and take great pictures with the forest in the backdrop. Vehicles have been banned inside the forest with the exceptions of cycles. It has excellent cycling trails so you can find a lot of cyclists visiting here especially in the mornings.
+            """Located at a distance of only 20 km outside Bengaluru, Turahalli is a sprawling verdant forest that is a perfect escapade from the chaos and din of the city into nature. The forest is sprinkled with huge rock boulders that make it a perfect spot not only to sit and relax but also to pose and take great pictures with the forest in the backdrop. Vehicles have been banned inside the forest with the exceptions of cycles. It has excellent cycling trails so you can find a lot of cyclists visiting here especially in the mornings.
 
 Because of the presence of several rock boulders, you can also find adventure enthusiasts here. These climbers visit regularly to practice to participate in national as well as international competitions. In addition to that, the forest supports a rich and varied wildlife, both in terms of flora and fauna. The trees are mostly eucalyptus among other species. Several animals and birds can also be spotted in the jungle. Since there are no eateries or food stalls that can be found here, it is best advised to carry food along.
 
@@ -137,7 +155,8 @@ Rock Climbing is also a popular activity at the forest because of the presence o
 6.Picnic
 
 Lastly, picnic is a popular activity that people come here for. You can sit down with a basket of food alongside a brook and enjoy food amidst bounteous natural beauty.
-''')
+"""
+        )
     repeat = input("Do you want to continue? (y/n)")
-    if repeat == 'n' or repeat == 'N':
+    if repeat == "n" or repeat == "N":
         break
